@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #202124;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header a {
+    float: left;
+    text-decoration-line: none;
+    color: #bdc1c6;
+    font-size: 1em;
+    padding: 1em;
+    margin-top: 1.7em;
+}
+
+#logo {
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.header-right a {
+    float: right;
+}
+
+.header-left a:hover {
+    text-decoration: underline;
+    background-color: #303134;
+}
+
+.grid-container {
+    text-align: center;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+    'title title title title'
+    'movie-1 movie-2 movie-3 movie-4';
+    gap: .5em;
+    font-size: .9em;
+    margin: 0 3em;
+}
+
+.title {
+    grid-area: title;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.movie-1{
+    grid-area: movie-1;
+}
+
+.movie-2 {
+    grid-area: movie-2;
+}
+
+.movie-3 {
+    grid-area: movie-3;
+}
+
+.movie-4 {
+    grid-area: movie-4;
+}
+
+.movie-1, .movie-2, .movie-3, .movie-4 {
+    border: 2px solid #303134;
+    border-radius: 2em;
+    font-size: .9em;
+}
+
+.grid-container img {
+    padding: 1em;
+    width: 100%;
+}
+
+.grid-container a {
+    text-decoration-line: none;
+    color: #bdc1c6;
+}
+
+.grid-container a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    color: #bdc1c6;
+    text-align: center;
+    padding: 10px;
+    padding-top: 0px;
+    margin: 0;
+    font-size: .9em;
+}
+
+.footer hr {
+    border: 1px solid #bdc1c6;
+}
