@@ -46,17 +46,19 @@ body, html {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-areas:
-    'title title title title'
-    'movie-1 movie-2 movie-3 movie-4';
+    'title-1 title-1 title-1 title-1'
+    'movie-1 movie-2 movie-3 movie-4'
+    'title-2 title-2 title-2 title-2'
+    'show-1 show-2 show-3 show-4';
     gap: .5em;
     font-size: .9em;
     margin: 0 3em;
 }
 
-.title {
-    grid-area: title;
+.title-1, .title-2 {
+    grid-area: title-1;
     text-align: left;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 .movie-1{
@@ -75,7 +77,29 @@ body, html {
     grid-area: movie-4;
 }
 
-.movie-1, .movie-2, .movie-3, .movie-4 {
+.title-2 {
+    grid-area: title-2;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.show-1{
+    grid-area: show-1;
+}
+
+.show-2 {
+    grid-area: show-2;
+}
+
+.show-3 {
+    grid-area: show-3;
+}
+
+.show-4 {
+    grid-area: show-4;
+}
+
+.movie-1, .movie-2, .movie-3, .movie-4, .show-1, .show-2, .show-3, .show-4 {
     border: 2px solid #303134;
     border-radius: 2em;
     font-size: .9em;
