@@ -138,6 +138,13 @@ body, html {
     border: 1px solid #bdc1c6;
 }
 
+.footer button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 /* on screens that are 600px or more */
 @media only screen and (min-width: 600px) {
     .grid-container {
