@@ -125,6 +125,10 @@ body, html {
     text-decoration: underline;
 }
 
+.grid-container a:hover ~ a, .grid-container img:hover {
+    filter: brightness(50%);
+}
+
 .footer {
     color: #bdc1c6;
     text-align: center;
