@@ -44,12 +44,18 @@ body, html {
     text-align: center;
     color: #ffffff;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(1, 100%);
     grid-template-areas:
-    'title-1 title-1 title-1 title-1'
-    'movie-1 movie-2 movie-3 movie-4'
-    'title-2 title-2 title-2 title-2'
-    'show-1 show-2 show-3 show-4';
+    'title-1'
+    'movie-1'
+    'movie-2'
+    'movie-3'
+    'movie-4'
+    'title-2'
+    'show-1'
+    'show-2'
+    'show-3'
+    'show-4';
     gap: .5em;
     font-size: .9em;
     margin: 0 3em;
@@ -107,7 +113,7 @@ body, html {
 
 .grid-container img {
     padding: 1em;
-    width: 100%;
+    width: 90%;
 }
 
 .grid-container a {
@@ -130,4 +136,30 @@ body, html {
 
 .footer hr {
     border: 1px solid #bdc1c6;
+}
+
+/* on screens that are 600px or more */
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+        'title-1 title-1'
+        'movie-1 movie-2'
+        'movie-3 movie-4'
+        'title-2 title-2'
+        'show-1 show-2'
+        'show-3 show-4';
+    }
+}
+
+/* on screens that are 992px or more */
+@media only screen and (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-areas:
+        'title-1 title-1 title-1 title-1'
+        'movie-1 movie-2 movie-3 movie-4'
+        'title-2 title-2 title-2 title-2'
+        'show-1 show-2 show-3 show-4';
+    }
 }
